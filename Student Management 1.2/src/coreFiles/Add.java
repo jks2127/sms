@@ -29,7 +29,7 @@ public class Add extends JFrame {
 	private static JTextField tf_name;
 	private static JTextField tf_phone;
 	private static JTextField tf_address;
-
+	private static JTextField tf_roll;
 	/**
 	 * Launch the application.
 	 */
@@ -37,7 +37,7 @@ public class Add extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Add frame = new Add();
+					Login frame = new Login();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -45,7 +45,6 @@ public class Add extends JFrame {
 			}
 		});
 	}
-
 	/**
 	 * Create the frame.
 	 */
@@ -128,8 +127,20 @@ public class Add extends JFrame {
 		btn_submit.setBounds(282, 264, 89, 23);
 		body.add(btn_submit);
 		
+		tf_roll = new JTextField();
+		tf_roll.setColumns(10);
+		tf_roll.setBounds(182, 65, 189, 20);
+		body.add(tf_roll);
+		
+		JLabel lbl_roll = new JLabel("Roll No.");
+		lbl_roll.setBounds(88, 68, 84, 19);
+		body.add(lbl_roll);
+		
 	}
 
+	public static JTextField getTextField_r() {
+		return tf_roll;
+	}
 	public static JTextField getTextField() {
 		return tf_name;
 	}
@@ -141,5 +152,4 @@ public class Add extends JFrame {
 	public static JTextComponent getTextField_2() {
 		return tf_address;
 	}
-
 }

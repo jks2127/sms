@@ -38,7 +38,6 @@ public class Delete extends JFrame {
 	private JTextField tf_search;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 	private JTable table;
-
 	/**
 	 * Launch the application.
 	 */
@@ -46,7 +45,7 @@ public class Delete extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Delete frame = new Delete();
+					Login frame = new Login();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -54,7 +53,6 @@ public class Delete extends JFrame {
 			}
 		});
 	}
-
 	/**
 	 * Create the frame.
 	 */

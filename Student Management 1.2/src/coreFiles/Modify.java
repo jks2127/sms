@@ -33,7 +33,7 @@ public class Modify extends JFrame {
 	JTextField tf_new_name;
 	JTextField tf_new_phone;
 	JTextField tf_new_address;
-
+	
 	/**
 	 * Launch the application.
 	 */
@@ -41,7 +41,7 @@ public class Modify extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Modify frame = new Modify();
+					Login frame = new Login();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();

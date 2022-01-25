@@ -15,15 +15,16 @@ public class StudentDao {
         boolean f=false;
         try {
             //jdbc code
-            String q="insert into students(sname,sphone,saddress) values(?,?,?)";
+            String q="insert into students(Roll,Name,PhoneNo,Address) values(?,?,?,?)";
             
             //preparedStatement
             PreparedStatement pstmt=con.prepareStatement(q);
 
             //set the value of parameter
-            pstmt.setString(1,Add.getTextField().getText());
-            pstmt.setString(2,Add.getTextField_1().getText());
-            pstmt.setString(3,Add.getTextField_2().getText());
+            pstmt.setString(1,Add.getTextField_r().getText());
+            pstmt.setString(2,Add.getTextField().getText());
+            pstmt.setString(3,Add.getTextField_1().getText());
+            pstmt.setString(4,Add.getTextField_2().getText());
 
             //execute.....
             pstmt.executeUpdate();
@@ -50,7 +51,7 @@ public class StudentDao {
 	public static void deleteFromDB(int id) {
 		Connection con=CP.createC();
 	
-		String q="delete from students where sid=?";
+		String q="delete from students where Roll=?";
 		
 		try {
 			PreparedStatement pstmt=con.prepareStatement(q);
@@ -69,7 +70,7 @@ public class StudentDao {
 	public static void deleteFromDB(String id) {
 		Connection con=CP.createC();
 	
-		String q="delete from students where sname=?";
+		String q="delete from students where Name=?";
 		
 		try {
 			PreparedStatement pstmt=con.prepareStatement(q);
@@ -89,7 +90,7 @@ public class StudentDao {
 	
 	public static void update(int id,Students st) throws IOException {
 		Connection con= CP.createC();
-		String q="update students set sname=?,sphone=?,saddress=? where sid=?";
+		String q="update students set Name=?,PhoneNo=?,Address=? where Roll=?";
 		try {
 			PreparedStatement pstmt= con.prepareStatement(q);
 			

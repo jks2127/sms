@@ -27,9 +27,9 @@ public class Login extends JFrame {
 	private JTextField tf_email;
 	private JTextField tf_pswd;
 
-	/**
-	 * Launch the application.
-	 */
+
+// Launch the application.
+
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -43,9 +43,9 @@ public class Login extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+
+// Create the frame.
+	 
 	public Login() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

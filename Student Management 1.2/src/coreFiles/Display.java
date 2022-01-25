@@ -32,7 +32,6 @@ public class Display extends JFrame {
 
 	private JPanel contentPane;
 	private JTable table;
-
 	/**
 	 * Launch the application.
 	 */
@@ -40,7 +39,7 @@ public class Display extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Display frame = new Display();
+					Login frame = new Login();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -48,7 +47,6 @@ public class Display extends JFrame {
 			}
 		});
 	}
-
 	/**
 	 * Create the frame.
 	 * @throws SQLException 
