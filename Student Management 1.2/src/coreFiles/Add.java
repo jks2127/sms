@@ -30,9 +30,9 @@ public class Add extends JFrame {
 	private static JTextField tf_phone;
 	private static JTextField tf_address;
 	private static JTextField tf_roll;
-	/**
-	 * Launch the application.
-	 */
+	
+	 // Launch the application.
+	 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -45,9 +45,9 @@ public class Add extends JFrame {
 			}
 		});
 	}
-	/**
-	 * Create the frame.
-	 */
+	
+	// Create the frame.
+	 
 	public Add() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

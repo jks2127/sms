@@ -15,8 +15,7 @@ public class StudentDao {
         boolean f=false;
         try {
             //jdbc code
-            String q="insert into students(Roll,Name,PhoneNo,Address) values(?,?,?,?)";
-            
+            String q="insert into students(Roll,Name,Phone,Address) values(?,?,?,?)";
             //preparedStatement
             PreparedStatement pstmt=con.prepareStatement(q);
 
@@ -90,7 +89,7 @@ public class StudentDao {
 	
 	public static void update(int id,Students st) throws IOException {
 		Connection con= CP.createC();
-		String q="update students set Name=?,PhoneNo=?,Address=? where Roll=?";
+		String q="update students set Name=?,Phone=?,Address=? where Roll=?";
 		try {
 			PreparedStatement pstmt= con.prepareStatement(q);
 			
